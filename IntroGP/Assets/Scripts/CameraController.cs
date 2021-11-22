@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
 
     private Vector3 offset;
 
     void Start()
     {
-        offset = transform.position - player.transform.position;
+        
+        player = GameObject.FindGameObjectWithTag("Player");
+        offset = new Vector3(0, 10, -10);
     }
 
     void LateUpdate()
     {
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            offset = new Vector3(0, 10, -10);
+            //offset = transform.position - player.transform.position;
+        }
         transform.position = player.transform.position + offset;
     }
 }
