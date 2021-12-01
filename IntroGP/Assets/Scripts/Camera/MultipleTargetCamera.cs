@@ -75,7 +75,7 @@ public class MultipleTargetCamera : MonoBehaviour
         {
             bounds.Encapsulate(targets[i].position);
         }
-
+        
         return bounds.center;
 
     }
