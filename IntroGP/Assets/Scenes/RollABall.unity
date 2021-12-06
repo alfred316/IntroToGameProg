@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -968,7 +968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2d4b9d4d9f72245b65d9d488745321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1494931051}
 --- !u!4 &756628401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6934017719669858890, guid: cd77776d99658834398110ba4ee72cc6,
@@ -1856,7 +1855,7 @@ GameObject:
   - component: {fileID: 1494931057}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1964,8 +1963,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  countText: {fileID: 37303702}
-  winText: {fileID: 129896913}
 --- !u!1 &1529058524
 GameObject:
   m_ObjectHideFlags: 0
