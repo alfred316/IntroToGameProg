@@ -17,10 +17,12 @@ public class NewPlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Movement();
+
+        
     }
 
-    void Move()
+    void Movement()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         //Get the value of the Horizontal input axis.
@@ -35,7 +37,7 @@ public class NewPlayerManager : MonoBehaviour
 
     public void SetInt()
     {
-        PlayerPrefs.SetInt("test", 3);
+        PlayerPrefs.SetInt("test", 7);
         PlayerPrefs.Save();
     }
 
